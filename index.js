@@ -1,8 +1,8 @@
 function produceDrivingRange(range){
   return function(trvlFrom, trvlTo){
-  let trvlTo =  parseInt(trvlTo)
-  let trvlFrom = parseInt(trvlFrom)
-  
+  trvlTo =  parseInt(trvlTo)
+  trvlFrom = parseInt(trvlFrom)
+
   if(trvlTo - trvlFrom <= range){
     return  `within range by ${Math.abs(trvlTo - trvlFrom)}`
       } else {
