@@ -9,3 +9,9 @@ function produceDrivingRange(range){
     }
     }
 }
+
+function produceTipCalculator(percent){
+  function(bill){
+    bill * percent
+  }
+}
