@@ -1,7 +1,7 @@
 function produceDrivingRange(distance){
-  return function(travelled){
+  return function(traveled){
     console.log(distance)
-    console.log(travelled)
-    return distance < travelled
+    console.log(traveled)
+    return distance < traveled
   }
 }
