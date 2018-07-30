@@ -1,12 +1,12 @@
-function produceDrivingRange(distance){
-  return function(traveled){
-  let trav =  parseInt(traveled)
-  console.log(distance)
-  console.log(trav);
-  if(distance < trav){
-    return  `within range by ${distance - trav}`
+function produceDrivingRange(range){
+  return function(trvlFrom, trvlTo){
+  let trvlTo =  parseInt(trvlTo)
+  let trvlFrom = parseInt(trvlFrom)
+  
+  if(trvlTo - trvlFrom <= range){
+    return  `within range by ${Math.abs(trvlTo - trvlFrom)}`
       } else {
-    return ` ${trav - distance}  blocks out of range`
+    return `${Math.abs(trvlTo - trvlFrom)} blocks out of range`
     }
     }
 }
