@@ -9,7 +9,7 @@ function produceDrivingRange(range){
   if(trvlTo - trvlFrom <= range){
     return  `within range by ${Math.abs(trvlTo -trvlFrom)}`
       } else {
-    return `${Math.abs(trvlTo - trvlFrom)} blocks out of range`
+    return `${Math.abs(trvlTo - trvlFrom) - range} blocks out of range`
     }
     }
 }
