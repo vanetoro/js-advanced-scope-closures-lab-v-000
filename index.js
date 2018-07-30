@@ -4,8 +4,9 @@ function produceDrivingRange(range){
   trvlFrom = parseInt(trvlFrom)
   console.log(trvlTo)
   console.log(trvlFrom)
+  console.log(range)
   if(trvlTo - trvlFrom <= range){
-    return  `within range by ${Math.abs(trvlFrom - trvlTo)}`
+    return  `within range by ${Math.abs(trvlTo -trvlFrom)}`
       } else {
     return `${Math.abs(trvlTo - trvlFrom)} blocks out of range`
     }
