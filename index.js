@@ -11,7 +11,7 @@ function produceDrivingRange(range){
 }
 
 function produceTipCalculator(percent){
-  function(bill){
+    return function(bill){
     bill * percent
   }
 }
